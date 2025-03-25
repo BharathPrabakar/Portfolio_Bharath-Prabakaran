@@ -131,13 +131,30 @@ span {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 30%;
+    width: 28%;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .card:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.certification-cards{
+    display: flex;
+    justify-content: space-evenly;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
+}
+
+.certification-cards .card {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+}
+
+.certification-cards::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for better appearance */
 }
 
 @media (max-width: 768px) {
