@@ -6,20 +6,25 @@
         <meta name="description" content="Bharath Prabakaran @ Portfolio">
         <meta lang="en">
         <link rel="stylesheet" href="Portfolio_Style.css">
+        <style>
+            html {
+                scroll-behavior: smooth;
+            }
+        </style>
     </head>
     <body>
         <div class="container">
         <nav class="navbar">
             <ul class="nav-list">
-                <li><a href="">Home</a></li>
-                <li><a href="">Skills</a></li>
-                <li><a href="">Projects</a></li>
-                <li><a href="">Certifications</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
                 <li><a href="">Resume</a></li>
             </ul>   
         </nav>
         </div>
-        <header class="header">
+        <header class="header" id="home">
             <section class="intro" align="center">
                 <h1>Hi there! I'm <span>Bharath Prabakaran</span> </h1>
                 <p><i>A Student</i></p>
@@ -34,7 +39,7 @@
                 <p>I am a continuous learner with a strong foundation in MERN stack development, Data Structures & Algorithms (DSA), and core computer science concepts such as Computer Networks, Computer Organization, and Operating Systems.</p>
                 <p>My flexibility and collaborative mindset enable me to adapt to different challenges and work effectively in team environments. I am passionate about building scalable applications and continuously improving my skills to stay ahead in the tech industry.</p>
             </section>
-            <section class="section-style">
+            <section class="section-style" id="skills">
                 <h2 style="text-align: center;">Skills</h2>
                 <div class="skill_list">
                     <pre>  HTML  </pre>
@@ -49,22 +54,25 @@
                     <pre>  GIT   </pre>
                 </div>
             </section>
-            <section class="section-style">
+            <section class="section-style" id="projects">
                 <h2 style="text-align: center;">Projects</h2>
                 <div class="project-cards">
                     <div class="card">
-                        <h3>Project 1</h3>
-                        <p>Description of Project 1</p>
+                        <h3>Google Form clone</h3>
+                        <p>Developed a fully functional clone of Google Forms using the MERN stack. This project replicates the core functionalities of Google Forms, allowing users to create, edit, and share dynamic forms, as well as collect and analyze responses effectively.</p>
+                        <pre><a href="https://github.com/BharathPrabakar/Codsoft_Int-Calculator.git" target="_blank">GitHub</a> <a href="https://github.com/BharathPrabakar/Codsoft_Int-Calculator.git" target="_blank">GitHub</a></pre>
                     </div>
                     <div class="card">
-                        <h3>Project 2</h3>
-                        <p>Description of Project 2</p>
+                        <h3>Contact Manager Application</h3>
+                        <p>Designed and implemented an institutional-level contact manager application using the MERN stack. This project facilitates seamless management of organizational contacts, including storing, updating, and retrieving contact details with advanced search capabilities.</p>
                     </div>
                     <div class="card">
-                        <h3>Project 3</h3>
-                        <p>Description of Project 3</p>
+                        <h3>Shoping Website</h3>
+                        <p>Built a feature-rich shopping application that integrates a custom API, MySQL database, and a secure payment gateway to provide users with a seamless shopping experience. The application is designed to be scalable, user-friendly, and efficient in managing inventory and processing transactions.</p>
                     </div>
                 </div>
+            </section>
+            <section class="section-style" id="Certifications">
             </section>
         </main>
 
