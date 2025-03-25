@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-top: 50px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.navbar {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 10;
+}
+
+.nav-list li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-list li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header {
+    background: #6ab04c;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 55px; /* Adjusted margin to prevent collision */
+    text-align: center;
+}
+
+.intro h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.section-style {
+    padding: 20px;
+    background: #fff;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-style ul {
+    list-style-type: none; /* Remove dots from list items */
+}
+
+.footer {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+a{
+    text-decoration: none;
+}
+.reach_me{
+    display: inline;
+}
+
+.reach_me_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+span{
+    font-size: 3rem;
+    color:#fff;
+    background:url('https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=1024x1024&w=0&k=20&c=z8_rWaI8x4zApNEEG9DnWlGXyDIXe-OmsAyQ5fGPVV8=') center;
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+}
+.skill_list{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.skill_list pre {
+    background-color: darkgray;
+    padding: 50px 70px;
+    border-radius: 12px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill_list pre:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.project-cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .nav-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .nav-list li {
+        margin: 10px 0;
+    }
+
+    .skill_list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill_list pre {
+        margin: 10px 0;
+        width: 80%;
+        text-align: center;
+    }
+
+    .reach_me_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reach_me_container div {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .card {
+        width: 80%;
+    }
+}
